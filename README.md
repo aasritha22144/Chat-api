@@ -1,11 +1,7 @@
-Chat History REST API – Assignment
+### Chat History REST API – Assignment
 
 ### Description
-This assignment focuses on building a simple backend REST API that manages chat history. The API allows users to create chat messages, retrieve all messages, filter messages by user, and clear the entire chat history. The application is developed using FastAPI, stores data in a SQLite database, includes automated test cases using pytest, and is containerized using Docker.
-
-## Objective
-The main objective of this assignment is to understand and implement core backend development concepts such as RESTful API design, database integration, data validation, automated testing, and containerized application deployment.
-
+This assignment focuses on building a  backend REST API that manages chat history. The API allows users to create chat messages, retrieve all messages, filter messages by user, and clear the entire chat history. The application is developed using FastAPI, stores data in a SQLite database, includes automated test cases using pytest, and is containerized using Docker.
 
 
 ## Technologies Used
