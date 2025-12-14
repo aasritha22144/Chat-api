@@ -25,7 +25,57 @@ POST /messages
 Creates and stores a new chat message in the database.
 
 Request body:
+
 {
   "user": "string",
   "message": "string"
+}
+
+2. Retrieve All Messages
+
+GET /messages
+
+Retrieves all stored chat messages from the database in chronological order based on the timestamp.
+
+Example response:
+
+[
+  {
+    "id": 1,
+    "user": "Priya",
+    "message": "Hello",
+    "timestamp": "2025-12-13T06:17:11"
+  },
+  {
+    "id": 2,
+    "user": "Aasritha",
+    "message": "Hi",
+    "timestamp": "2025-12-13T06:18:05"
+  }
+]
+
+3. Retrieve Messages by User
+
+GET /messages/{user}
+
+Retrieves all chat messages sent by a specific user.
+
+If the specified user exists, their messages are returned.
+
+If the user does not exist, an empty list is returned.
+
+Example:
+
+GET /messages/Priya
+
+4. Clear Chat History
+
+DELETE /messages
+
+Deletes all chat messages stored in the database.
+
+Response:
+
+{
+  "status": "cleared"
 }
