@@ -1,6 +1,6 @@
 Chat History REST API – Assignment
 
-##Description
+### Description
 This assignment focuses on building a simple backend REST API that manages chat history. The API allows users to create chat messages, retrieve all messages, filter messages by user, and clear the entire chat history. The application is developed using FastAPI, stores data in a SQLite database, includes automated test cases using pytest, and is containerized using Docker.
 
 ## Objective
@@ -31,7 +31,7 @@ Request body:
   "message": "string"
 }
 
-2. Retrieve All Messages
+### 2. Retrieve All Messages
 
 GET /messages
 
@@ -54,7 +54,7 @@ Example response:
   }
 ]
 
-3. Retrieve Messages by User
+### 3. Retrieve Messages by User
 
 GET /messages/{user}
 
@@ -68,7 +68,7 @@ Example:
 
 GET /messages/Priya
 
-4. Clear Chat History
+### 4. Clear Chat History
 
 DELETE /messages
 
